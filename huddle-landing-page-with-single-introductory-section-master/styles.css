@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  --bg-magenta: hsl(300, 69%, 71%);
+  --bg-violet: hsl(257, 40%, 49%);
+  --bg-white: hsl(0, 0%, 100%);
+  --primary-ff: "Poppins", sans-serif;
+  --secondary-ff: "Open-sans", sans-serif;
+}
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button,
+i {
+  cursor: pointer;
+}
+button {
+  border: none;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top left;
+  background-color: var(--bg-violet);
+  color: var(--bg-white);
+  overflow: hidden;
+}
+.container {
+  display: flex;
+}
+.logo-image {
+  margin: 5rem 0 0 6rem;
+}
+.logo-image img {
+  max-width: 220px;
+}
+.img-section {
+  margin: 8.5rem 0 0 6rem;
+}
+.img-section {
+  width: 709px;
+}
+.text-section {
+  margin: 24rem 11.5rem 0 6rem;
+}
+h1 {
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  font-family: var(--primary-ff);
+  font-weight: 600;
+}
+p {
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-family: var(--secondary-ff);
+  line-height: 2.7rem;
+  font-weight: 400;
+}
+button {
+  width: 220px;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  border-radius: 3rem;
+  font-family: var(--primary-ff);
+  color: var(--bg-violet);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+}
+button:hover,
+button:focus {
+  background-color: var(--bg-magenta);
+  color: var(--bg-white);
+}
+.icons {
+  margin: 15rem 0 0 0;
+  text-align: right;
+}
+.icons i {
+  width: 40px;
+  height: 40px;
+  margin-right: 1.5rem;
+  font-size: 2rem;
+  border: 1px solid var(--bg-white);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+}
+.icons i:hover {
+  color: var(--bg-magenta);
+  border: 1px solid var(--bg-magenta);
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-color: var(--bg-violet);
+    background-image: url("./images/bg-mobile.svg");
+    overflow: hidden;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .logo-image {
+    margin: 3.5rem 0 0 2rem;
+  }
+  .logo-image img {
+    width: 16rem;
+  }
+  .img-section {
+    margin: 7rem 1.5rem 0 1.5rem;
+  }
+  .img-section img {
+    width: 345px;
+  }
+  .text-section {
+    margin: 80px 20px 0 20px;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  p {
+    font-size: 1.85rem;
+    text-align: center;
+  }
+  .btn-div {
+    text-align: center;
+  }
+  .icons {
+    margin: 10rem 1.5rem 0 1.5rem;
+    text-align: center;
+  }
+}
